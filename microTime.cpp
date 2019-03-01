@@ -253,7 +253,7 @@ time_t makeTime(const tmElements_t &tm){
 /* Low level system time functions  */
 
 static time_t sysTime = 0;
-static uint32_t prevMillis = 0;
+static uint32_t prevMicros = 0;
 static time_t nextSyncTime = 0;
 static timeStatus_t Status = timeNotSet;
 
