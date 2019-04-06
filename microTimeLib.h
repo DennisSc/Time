@@ -129,7 +129,7 @@ time_t  now(uint32_t& sysTimeMicros); // return the current time as seconds and 
 
 #endif
 #ifdef usePPS
-void    syncToPPS();
+void    IRAM_ATTR syncToPPS();
 #endif
 void    setTime(time_t t);
 void    setTime(int hr,int min,int sec,int day, int month, int yr);
